@@ -7,17 +7,15 @@ output: word_document
 
 ```{r}
 
+mpg%>%
+  select(manufacturer, model, drv)
+
+#4) From the mpg data frame, use and show R code to produce a new 
+# data table that shows data for all vehicles whose city mileage cty is 
+# less than 15. 
+#Print the first 10 rows
 
 
-# DPLYER LAB KEY
-
-library(tidyverse)
-library(dplyr)
-
-#1) From the mpg data frame, use and show R code to produce a new data table
-# that only shows data for the three variables manufacturer, model, and drv.
-
-mpg
 
 mpg%>%
   select(manufacturer, model, drv)
